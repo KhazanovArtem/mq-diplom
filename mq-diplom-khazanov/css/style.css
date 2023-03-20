@@ -1,8 +1,0 @@
-.page {
-  display: flex;
-  flex-direction: row;
-}
-
-.container {
-  flex-basis: 100vh;
-}
