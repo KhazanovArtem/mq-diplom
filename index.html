@@ -8,34 +8,36 @@
   </head>
   <body>
     <div class="pop-up-mask pop-up__hidden">
-      <section class="pop-up">
+      <form class="pop-up pop-up__hidden">
         <svg class="pop-up__x__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 441 441"><path fill="#fff" stroke="#000" d="M220.336 170.564l.353.353.354-.353L390.288 1.318l49.796 49.773-169.269 169.245-.353.354.353.354 169.269 169.245-49.796 49.796-169.245-169.269-.354-.353-.353.353-169.27 169.269-49.748-49.796 169.245-169.245.353-.354-.353-.354L1.318 51.067 51.09 1.318l169.246 169.246z"/></svg>
-        <h3 class="pop-up-title">
-          ваш фидбек
-        </h3>
-        <div class="pop-up-list">
-          <label class="pop-up_label" for="list">Как часто вы заходите на сайт?</label>
-          <input id="list" class="pop-up_listfield field" placeholder="Почти каждый день" name="list" required>
+        <div class="pop-up-info">
+          <h3 class="pop-up-title">
+            ваш фидбек
+          </h3>
+          <div class="pop-up-list">
+            <label class="pop-up_label" for="list">Как часто вы заходите на сайт?</label>
+            <input id="list" class="pop-up_listfield field" placeholder="Почти каждый день" name="list" required>
+          </div>
+          <div class="pop-up_mail-question">
+            <span class="mail-question">Вы подписаны на e-mail рассылку?</span>
+              <div class="mail-answer">
+                <label for="answer" class="answer">
+                  <input  class="radio" type="radio" name="answer" id="answer" checked>       
+                  <span id="answer" class="answer-text">да</span>
+                </label>
+                <label for="answer2" class="answer">
+                  <input  class="radio" type="radio" name="answer" id="answer2">    
+                  <span id="answer" class="answer-text">нет</span>
+                </label>
+              </div>
+          </div>
+          <div class="pop-up_feedback">
+            <span class="feedback-question">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
+            <textarea class="textarea" name="textarea" id="feedback" cols="30" rows="10">Может больше рецептов?</textarea>
+          </div>
+          <button class="send-btn">Отправить</button>
         </div>
-        <div class="pop-up_mail-question">
-          <span class="mail-question">Вы подписаны на e-mail рассылку?</span>
-            <div class="mail-answer">
-              <label for="answer" class="answer">
-                <input  class="radio" type="radio" name="answer" id="answer" checked>       
-                <span id="answer" class="answer-text">да</span>
-              </label>
-              <label for="answer2" class="answer">
-                <input  class="radio" type="radio" name="answer" id="answer2">    
-                <span id="answer" class="answer-text">нет</span>
-              </label>
-            </div>
-        </div>
-        <div class="pop-up_feedback">
-          <span class="feedback-question">Расскажите, какой контент вы бы хотели видеть на нашем сайте?</span>
-          <textarea class="textarea" name="textarea" id="feedback" cols="30" rows="10">Может больше рецептов?</textarea>
-        </div>
-        <button class="send-btn">Отправить</button>
-      </section>
+      </form>
     </div>
     <header class="title">
       <div class="title-content">
@@ -77,9 +79,7 @@
         <h2 class="trends-title">сейчас в тренде</h2>
         <ul class="trends-list">
           <li class="trend-item">
-            <div class="trend-image">
-              <img src="images/trend1.jpg" class="trend-img" alt="сейчас в тренде: сад на подоконнике">
-            </div>
+            <img src="images/trend1.jpg" class="trend-img" alt="сейчас в тренде: сад на подоконнике">
             <div class="trend-item-title">
               <ul class="trend-item-tags">
                 <li class="trend-item-tag">
@@ -201,9 +201,7 @@
                   <time class="news-date">10 июня 2019</time>
                   <a href="#0" class="news-author">Неизвестный автор</a>
                 </div>
-                <span class="news-article">
-                  <p>Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
-                </span>
+                <span class="news-article">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</span>
               </article>
             </li>
             <li class="news_item">
@@ -225,10 +223,8 @@
                   <time class="news-date">10 июня 2019</time>
                   <a href="#0" class="news-author">Неизвестный автор</a>
                 </div>
-                <span class="news-article">
-                  <p>Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</p>
-                  <p>Мы составили список лучших летних фестивалей по всему миру.</p>
-                </span>
+                <span class="news-article">Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?</span>
+                <span class="news-article">Мы составили список лучших летних фестивалей по всему миру.</span>
               </article>
             </li>
             <li class="news_item">
@@ -253,9 +249,7 @@
                   <time class="news-date">10 июня 2019</time>
                   <a href="#0" class="news-author">Неизвестный автор</a>
                 </div>
-                <span class="news-article">
-                  <p>Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
-                </span>
+                <span class="news-article">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</span>
               </article>
             </li>
             <li class="news_item">
@@ -283,9 +277,7 @@
                   <time class="news-date">10 июня 2019</time>
                   <a href="#0" class="news-author">Неизвестный автор</a>
                 </div>
-                <span class="news-article">
-                  <p>Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
-                </span>
+                <span class="news-article">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</span>
               </article>
             </li>
           </ul>
@@ -474,30 +466,26 @@
       </section>
     </main>
     <footer class="footer">
-      <ul class="socials-list">
-        <li class="social-item"> 
-          <address class="social-item__address">
+      <address class="social-item__address">
+        <ul class="socials-list">
+          <li class="social-item"> 
             <a href="https://dribbble.com/" class="social-item-link social-item-link__dribble">
               <span class="visually-hidden">dribble</span>
             </a>
-          </address>
-        </li>
-        <li class="social-item"> 
-          <address class="social-item__address">
+          </li>
+          <li class="social-item"> 
             <a href="https://sk.pinterest.com/" class="social-item-link social-item-link__pinterest">
               <span class="visually-hidden">pinterest</span>
             </a>
-          </address>
-        </li>
-        <li class="social-item">
-          <address class="social-item__address">
+          </li>
+          <li class="social-item">
             <a href="https://www.tumblr.com/" class="social-item-link social-item-link__tumblr">
               <span class="visually-hidden">tumblr</span>
             </a>
-          </address>
-        </li>
-      </ul>
-      <a href="#0" class="copyright">Copyright © 2009–2019 City Blog LLC.</a>
+          </li>
+        </ul>
+        <a href="#0" class="copyright">Copyright © 2009–2019 City Blog LLC.</a>
+      </address>
     </footer>
   </body>
 </html>
