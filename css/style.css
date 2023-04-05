@@ -21,9 +21,9 @@ a {
 
 /* Видимость pop-up закомментировать класс .pop-up-mask.pop-up__hidden */
 
-.pop-up-mask.pop-up__hidden  {
+/* .pop-up-mask.pop-up__hidden  {
   display: none;
-}
+} */
 
 .pop-up__x__icon {
   position: relative;
@@ -45,7 +45,6 @@ a {
 }
 
 .pop-up {
-  padding-top: 50px;
   position: fixed;
   max-width: 390px;
 }
@@ -1229,7 +1228,7 @@ img {
   }
 
   .pop-up__x__icon {
-    left: 100%;
+    left: 91%;
   }
 }
 
