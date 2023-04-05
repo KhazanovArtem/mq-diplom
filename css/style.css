@@ -21,9 +21,9 @@ a {
 
 /* Видимость pop-up закомментировать класс .pop-up-mask.pop-up__hidden */
 
-/* .pop-up-mask.pop-up__hidden  {
+.pop-up-mask.pop-up__hidden  {
   display: none;
-} */
+}
 
 .pop-up__x__icon {
   position: relative;
